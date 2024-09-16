@@ -348,7 +348,7 @@ GROUP BY
     call_sample_name,
     sample_name,
  stg_call_hist.entity_display_name_vod__c as entity_display_name_vod__c,
- stg_call_hist.is_clm_call
+ stg_call_hist.is_clm_call as is_clm_call
  
  FROM
  (SELECT * FROM call_CTE) call_dtl
@@ -696,3 +696,4 @@ is_clm_call
  affiliate_code,
  is_clm_call
  from call_data_product
+ 
